@@ -1,0 +1,7 @@
+<ion-view view-title="Devices">
+  <ion-content>
+    <ion-radio on-swipe="deleteRoku(roku)" ng-repeat="roku in rokus track by $index" ng-model="$parent.activeIP" value="{{roku.ipAddress}}" ng-change="activateRoku(roku)">
+      {{roku.name}}
+    </ion-radio>
+  </ion-content>
+</ion-view>

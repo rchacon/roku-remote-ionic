@@ -1,0 +1,20 @@
+<ion-view view-title="Discover">
+  <ion-content>
+    <form ng-submit="addRoku(roku)">
+      <div class="list list-inset">
+        <p class="error">{{error}}</p>
+        <label class="item item-input">
+          <span class="input-label">Name</span>
+          <input type="text" ng-model="roku.name">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">IP Address</span>
+          <input type="text" ng-model="roku.ipAddress">
+        </label>
+        <button class="button button-full button-positive" type="submit" ng-disabled="invalidRoku()">
+          Submit
+        </button>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
